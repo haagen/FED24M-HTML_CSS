@@ -51,7 +51,7 @@
         Är      en text
 
         <!-- Paragrafer -->
-        <h2>Paragrafer</h2>
+        <h2 id="paragrafer">Paragrafer</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consectetur ad dolores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quaerat consectetur nobis, mollitia aperiam alias incidunt molestias reiciendis sequi, ab illo exercitationem omnis itaque ut blanditiis voluptate rem voluptatibus deleniti. Consequatur consequuntur corrupti repellendus adipisci at inventore praesentium! Voluptatibus, fugit!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laboriosam quidem magni ut veniam qui repudiandae atque error sunt alias asperiores impedit libero aliquam sapiente itaque dignissimos animi excepturi, architecto labore aliquid temporibus adipisci rem!</p>
         <p>
@@ -59,7 +59,7 @@
             h2 - underrubrik, nivå 2<br>
         </p>
 
-        <h2>Specialtecken</h2>
+        <h2 id="specialtecken">Specialtecken</h2>
 
         Tecken som är skyddade av HTML: &lt;, &gt;, &amp;, &apos;, &quot;<br>
         
@@ -82,18 +82,23 @@
                 _top -- som standard, öppnar länken i samma fönster
                 _blank -- öppnar länken i nytt fönster/tab
             -->
-            <a href="https://www.duckduckgo.com" target="_blank">En sökmötor som heter QuakQuakGo</a>
+            <a href="https://www.duckduckgo.com" target="_blank">En sökmötor som heter QuakQuakGo</a><br>
+
+            <!-- interna länkar -->
+             <a href="#paragrafer">Gå till informationen om paragrafer</a>
         </p>
 
         <h2>Blockelemet</h2>
 
+        <!-- Exempel på paragrafer -->
         <p style="background: seagreen">Paragraf 1</p><p>Paragraf 2</p>
 
         <p>
-            Taggar (element) kan ha olika typ. Typerna beter sig olika. En typ av tagg är blockelement. Exempel på dessa är hX, p, div.<br>
+            Taggar (element) kan ha olika typ. Typerna beter sig olika. En typ av 
+            tagg är blockelement. Exempel på dessa är hX, p, div.
         </p>
         <p>
-            <b>Gemensama egenskaper</b><br>
+            <b>Gemensama egenskaper för blockelement</b><br>
             - börjar på en ny rad.<br>
             - tar hela bredden (width: 100%;)<br>
             - ibland så har de marginal och padding<br>
@@ -101,9 +106,14 @@
         </p>
 
         <div style="background-color: lightcoral;">
-            En "div"-tagg är ett lager eller en box.
+            En "div"-tagg är ett lager eller en box. Div-taggen är också ett blockelement. 
         </div>
 
+        <p><b>Inlineelement</b> är en annan typ av element. Det finns skillnader mellan
+        dessa olika typer. Exempel är b, i och span.</p>
+
+        <p><b>span</b> är ett element som kan användas för att formatera text. Själva
+        formatering styrs med CSS. Detta är ett <span>exempel</span>.</p>
 
     </body> <!-- Dokumentkroppen slutar här -->
 </html> <!-- Här slutar dokumentet -->
