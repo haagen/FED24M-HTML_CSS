@@ -2,3 +2,90 @@
 .cursive {
     font-style: italic;
 }
+
+/* child-selector
+
+section är förälder
+h2 är barn
+
+*/
+
+section > h2 {
+    color: pink;
+}
+
+/*
+    p - är syskon 
+    vi matchar de barnen som har ett syskon framför
+*/
+
+section p + p {
+    text-indent: 20px;
+}
+
+/*
+PSUDO-klasser
+*/
+
+a:active {
+    font-weight: bold;
+    color: peru;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: lightseagreen;
+    font-size: 30px;
+}
+
+#box:hover {
+    background-color: lightsalmon;
+}
+
+/*
+    Här matchar vi den tredje p-taggen i en section tag. 
+*/
+section p:nth-of-type(3){
+    font-weight: bold;
+}
+
+
+/* 
+
+Ordning spelar roll - den senast inkluderade regler är högre prioriterad.  
+
+#blueBox {
+    background-color: lime;
+}
+
+#blueBox {
+    background-color: gold;
+} */
+
+#emTest {
+    background-color: aqua;
+    width: 50%;
+    font-size: 50px;
+}
+
+#emTestBarn1 {
+    background-color: cornflowerblue;
+    /* width: 100pt; */
+    /* width: 50%; */ /* 50% av föräldern */
+    width: 0.5em; /* utgår från förälderns font-size 1em = font-size */ 
+}
+
+#emTestBarn2 {
+    background-color: greenyellow;
+    width: 4rem;
+}
+
+#vh_vv_test {
+    background-color: lightsalmon;
+    height: 25vh;
+    width: 74vw;
+    font-size: 2vh;
+}
