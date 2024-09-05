@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &amp; CSS: Lektion 03 - Introduktion till CSS</title>
+
+    <style>
+
+        .not_super_important {
+            color: purple;
+            font-weight: bold;
+        }
+
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn {
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .btnBlue {
+            background-color: blue;
+            color: white;
+        }
+
+        .btnGrey {
+            background-color: lightgray;
+            color: darkslategray;
+        }
+        
+        #box {
+            width: 50%;
+            height: 100px;
+            background-color: lightseagreen;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>HTML &amp; CSS: Lektion 03 - Introduktion till CSS</h1>
+
+    <p>
+
+        En paragraf med helt vanlig text. Ett ord som är <b style="color: green;">fetstilat 
+        och grönt</b>. Vi har ännu mera text och vi har en bit som skall vara <span class="not_super_important">fetstilat och 
+        lila</span>. En annan <span class="not_super_important">lila och fetstilad text</span>.
+
+    </p>
+
+    <p class="cursive">
+        En annan paragraf som skall vara kursiv.<br>
+        <input type="button" value="Spara" class="btn btnBlue">
+    </p>
+    <div>En annan box</div>
+    <div id="box">
+        Detta är en box!
+    </div>
+    
+</body>
+</html>
