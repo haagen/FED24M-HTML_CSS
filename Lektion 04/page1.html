@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &amp; CSS: Lektion 4 - Bilder mm</title>
+</head>
+<body>
+
+    <h1>HTML &amp; CSS: Lektion 4 - Bilder mm</h1>
+
+    <h2>Bilder</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum nesciunt ullam similique quidem necessitatibus quibusdam aliquid facilis natus reprehenderit quisquam. Mollitia error a dolorum sit autem ratione quas voluptas, odio sed asperiores neque illum similique ut ullam aut beatae rem maiores pariatur incidunt quam minima.
+    </p>
+    
+    <p>
+
+        <!--
+            Man kan styra bredd och höjd med dessa attribut i img-taggen. 
+            height="300"
+            width="300"
+        -->
+
+        <figure style="width: 400px; background-color: lightseagreen;">
+            <img
+                src="img/photo.jpeg"
+                alt="Bild av Martin med en gummianka"
+                style="width: 100%;"
+            >
+            <figcaption>En bildtext</figcaption>
+        </figure>
+    </p>
+
+    <p>
+        <a href="mailto:martin.haagen@elevera.se"><img src="img/envelope.png" alt="Kuvert"></a>
+        <a href="tel:90510"><img src="img/phone.png" alt="Telefon"></a>
+    </p>
+
+    <h2>Media</h2>
+
+    <h3>Video</h3>
+
+    <!-- widht height autoplay mm -->
+    <video controls>
+        <source src="video/video.mp4" type="video/mp4">
+        <p>Din webbläsare kan tyvärr inte se videoklippet. 🥲</p>
+    </video>
+
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="audio/audio.mp3" type="audio/mp3">
+        <p>Din webbläsare kan tyvärr inte spela ljudklippet. 🥲</p>
+    </audio>
+
+    <h3>Objekt</h3>
+    <object data="data/02 - HTML och CSS.pdf" type="application/pdf" width="700" height="1200">
+        <p>Din webbläsare kan tyvärr inte visa denna PDF. 🥲</p>
+    </object>
+
+    <h3>Embedd</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=EByFNJGliEIZvtmr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+
+    <h2>Listor</h2>
+
+    <h3>Sorterade listor</h3>
+
+    <h4>Favorit hundraser</h4>
+    <ol reversed start="10" type="I">
+        <li>Bordercollie</li>
+        <li>Golden</li>
+        <li>Schäfer</li>
+    </ol>
+
+    <h3>Osorterade lista</h3>
+
+    <h4>Inköpslista</h4>
+    <ul>
+
+        <li>Mjölk</li>
+        <li>Mjöl</li>
+        <li>Ägg</li>
+        <li>Nutella</li>
+
+        <li> <!-- li-start -->
+
+            <b>Fredagsmys</b>
+            <ul>
+                <li>Blandfärs</li>
+                <li>Tacokrydda</li>
+            </ul>
+
+        </li> <!-- li-slut -->
+
+    </ul>
+
+    <h3>Beskrivande lista</h3>
+
+    <b>FAQ</b>
+    <dl>
+        <dt>Hur mycket mat skall min Schäfer få?</dt>
+        <dd>Blba blab din Schärfer bör äta mellan 150gram torrfoder och 100gram blötfoder och en  morot. </dd>
+        <dt>Skall min hund få sova i sängen?</dt>
+        <dd>Den rätta frågan är väl om du skall få sova i sängen?</dd>
+
+    </dl>
+
+
+
+</body>
+</html>

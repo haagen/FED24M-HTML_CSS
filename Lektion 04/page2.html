@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS: Lektion 4 - Boxmodellen</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        hr {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML & CSS: Lektion 4 - Boxmodellen</h1>
+
+    <div style="
+        width: 500px;
+        height: 500px;
+        background-color: lightsalmon;
+        align-content: center;
+        margin: 0 auto;
+    ">
+
+        <div style="
+            width: 50%;
+            height: 50%;
+            background-color: lightseagreen;
+            padding: 50px;
+            margin: auto;
+            border: 10px solid black;
+            border-radius: 30px;
+        ">
+            Min inrebox
+        </div>
+
+    </div>
+
+
+    <hr>
+    
+
+    <div style="
+        background-color: lightsalmon;
+        width: 600px;
+        margin: 0 auto;
+        font-size: 0
+    ">
+        <header>
+            <h1>Min site</h1>
+        </header>
+
+        <div style="
+            background-color: lightseagreen;
+            width: 75%;
+            display: inline-block;
+            font-size: 16px;
+        ">
+            <!-- vänster kolumn-->
+            Box till vänster 75%
+            <h2>Blog 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam tempore animi labore, quasi maxime incidunt eius dolorem velit officia voluptate quos architecto ipsa eum.</p>
+        </div>
+        
+        <div style="
+            background-color: lightgoldenrodyellow;
+            width: 25%;
+            display: inline-block;
+            font-size: 16px;
+        ">
+            <!-- höger kolumn -->
+            Box till höger 24%;
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div style="
+    background-color: lightsalmon;
+    width: 600px;
+    margin: 0 auto;
+">
+
+    <div style="
+        background-color: lightseagreen;
+        width: 75%;
+        float:left;
+        padding: 5px;
+        box-sizing: border-box;
+    ">
+        <!-- vänster kolumn-->
+        Box till vänster 75% - flyter
+     </div>
+    
+    <div style="
+        background-color: lightgoldenrodyellow;
+        width: 25%;
+        float: left;
+        padding: 5px;
+        box-sizing: border-box;
+    ">
+        <!-- höger kolumn -->
+        Box till höger 25% - flyter
+    </div>
+
+</div>
+
+
+<hr>
+
+</body>
+</html>
