@@ -1,0 +1,58 @@
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    padding: 20px; /* Jag valde 20px istället för 10px så att punkterna inte hamnade i ramen */
+    border: 1px solid black;
+}
+
+
+.highlight {
+    background-color: yellow;
+    color: red;
+}
+
+#main-header {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* universal selektor */
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+.green {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+nav ul, nav li {
+    display: inline;
+    border: none;
+}
+
+nav li {
+    padding: 5px 10px 5px 10px;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+ul > li + li {
+    background-color: blue;
+}
