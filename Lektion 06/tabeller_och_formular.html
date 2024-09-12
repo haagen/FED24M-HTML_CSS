@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &amp; CSS: Lektion 6 - Tabeller och Formulär</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1>HTML &amp; CSS: Lektion 6 - Tabeller och Formulär</h1>
+    
+    <h2>Tabeller</h2>
+
+    <table>
+        <!-- tillåtna taggar 
+            caption
+            tr
+            thead
+            tbody
+            tfoot 
+        -->
+        <caption>Tabell 1. Svensks Svampar</caption>
+        <thead>
+            <tr> <!-- rad 1 -->
+                <th>Namn</th> <!-- första kolumnen i huvudet på tabellen-->
+                <th>Beskrivning</th> <!-- andra kolumnen -->
+                <th>Ätlig</th>
+                <th>Pris (kg)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!-- rad 2 -->
+                <td>Kantarell</td>
+                <td>En gul liten svamp med flikar på undersidan</td>
+                <td>Ja</td>
+                <td>150kr</td>
+            </tr>
+            <tr> <!-- rad 3 -->
+                <td>Grön flugsvamp</td>
+                <td>Vit med slemmig hat och sur stank</td>
+                <td>Nej - dödlig</td>
+                <td>0kr</td>
+            </tr>
+            <tr><!-- rad 4 -->
+                <td>Carl Johan</td>
+                <td>Vit fot med brun hat. Gula rör på undersidan. God smak</td>
+                <td>Ja</td>
+                <td>200kr</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><!-- rad 5 -->
+                <td></td>
+                <td>Snitt pris (/kg)</td>
+                <td></td>
+                <td>120kr</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <h2>Formulär</h2>
+
+    <h3>Formulär inputs exempel</h3>
+
+    <form action="https://www.google.com">
+
+        <div> <!-- Grundläggande inputs (text) -->
+            <label for="userName">Ditt namn:</label>
+            <input type="text" id="userName" name="userName" value="Martin Haagen">
+            <label for="password">Lösenord:</label>
+            <input type="password" id="password" name="password" >
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" value="" placeholder="+46 XXX XXX XXX">
+        </div>
+  
+        <div> <!-- Grundläggande val-->
+
+            <!-- Rullgardins meny -->
+            <label for="color">Färg</label>
+            <select id="color" name="color">
+                <option></option>
+                <option value="red">Röd</option>
+                <option value="green" selected>Grön</option>
+                <option value="blue">Blå</option>
+            </select>
+
+            <!-- Checkbox -->
+            <label for="terms">Jag godkänner allmännavilkor</label>
+            <input type="checkbox" id="terms" name="terms" checked value="termsOkay">
+
+            <!-- Radio -->
+            <label for="colorOption_red">Röd</label>
+            <input type="radio" id="colorOption_red" name="colorOption" value="red">
+            
+            <label for="colorOption_green">Grön</label>
+            <input type="radio" id="colorOption_green" name="colorOption" value="green">
+
+            <label for="colorOption_blue">Blå</label>
+            <input type="radio" id="colorOption_blue" name="colorOption" value="blue">
+
+
+        </div>
+
+        <div> <!-- Grundläggande knappar -->
+
+            <input type="button" id="btn1" value="Min första knapp" name="btn1">
+            <input type="submit" id="btn2" value="Min första submit" name="btn2">
+            <button id="btn3" name="btn3">
+                <img 
+                    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                    alt="Google Logo"
+                >
+                Min första "button"
+            </button>
+        </div>
+  
+    </form>
+
+
+    <!-- Exempel -->
+
+    <hr>
+     
+    <h3>Sökmotors exempel</h3>
+    <form action="https://google.com/search">
+
+        <label for="q">Söksträng</label>
+        <input type="text" id="q" name="q" placeholder="Söktext skriver du här">
+        <input type="submit" value="Sök">
+
+    </form>
+
+</body>
+</html>

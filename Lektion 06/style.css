@@ -1,0 +1,45 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+table {
+    caption-side: bottom;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    /* Rundade hörn på tabellen
+    
+    border-radius: 10px;
+    overflow:hidden; 
+    */
+}
+
+td, th {
+    border: 1px solid black;;
+}
+
+th {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+caption {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*
+FORMULÄR
+*/
+
+input {
+    display: block;
+}
+
+label {
+    display: block;
+}
