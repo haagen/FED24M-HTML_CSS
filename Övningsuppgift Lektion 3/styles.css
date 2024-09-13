@@ -56,3 +56,22 @@ nav a:hover {
 ul > li + li {
     background-color: blue;
 }
+
+.spacer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div.ovning7 > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.ovning7 p + p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.ovning7 p:nth-child(4) {
+    color: lightseagreen;
+}
