@@ -1,0 +1,45 @@
+#static {
+    background-color: lightpink;
+    width: 200px;
+    height: 200px;  
+}
+
+#relative {
+    background-color: cyan;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+#absolute {
+    background-color: lightgreen;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#fixed {
+    background-color: lightsalmon;
+    position: fixed;
+    top: 100px;
+    left: 800px;
+    height: 200px;
+}
+
+#sticky {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    position: sticky;
+    top: 200px;
+    z-index: 10;
+}
+
+#sticky2 {
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
