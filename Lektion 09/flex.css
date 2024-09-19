@@ -1,0 +1,53 @@
+#flexcontainer {
+    display: flex;
+    height: 200px;
+
+    /* 
+        Justerar elementen horisontellt
+        flex-start, flex-end, center, baseline, space-between, space-around 
+    */
+    justify-content: space-evenly;
+    
+
+    /*
+        Justera elementen verticalt
+        stretch, flex-start, flex-end
+
+    */
+    align-items: stretch;
+    
+    /* align-content: space-between; */
+    
+    flex-wrap: wrap;
+
+    /* 
+        Om column / column-reverse - byter justify-content och align-items
+        mening med varandra. 
+
+        row, row-reverse, column, column-reverse 
+    */
+    flex-direction: row;
+}
+
+#flexcontainer > div {
+    /* width: 50%; */
+}
+
+#flexobjekt1 {
+    background-color: lightseagreen;
+    /* order: 2; */
+    /* flex-basis: 200px; */
+}
+
+#flexobjekt2 {
+    background-color: lightsalmon;
+    /* flex-grow: 2; */
+    /* order: 1; */
+}
+
+#flexobjekt3 {
+    background-color: lightblue;
+    /* order: 3; */
+    /* flex-basis: 100px;
+    flex-grow: 4; */
+}
