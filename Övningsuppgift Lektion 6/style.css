@@ -1,0 +1,79 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    caption-side: bottom;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /*
+        När man använder border-collapse så slutar border-radius att fungera. 
+
+        Tricker är att man skapar en 1px stor skugga runt tabellen istället. 
+    */
+    border: 1px solid black;
+    border-radius: 5px; 
+    border-style: hidden;
+    box-shadow: 0 0 0 1px black; 
+
+}
+
+caption {
+    padding-top: 5px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    background-color: darkgray;
+    color: white;
+}
+
+th:first-child {
+    width: 100px;
+}
+
+th:nth-child(2) {
+    width: 200px;
+}
+
+th:last-child {
+    width: 150px;
+}
+
+tr:hover {
+    background-color: lightcoral;
+}
+
+.main {
+    width: 700px;
+    margin: 0 auto; 
+}
+
+.comments {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+label {
+    font-weight: bold;
+}
