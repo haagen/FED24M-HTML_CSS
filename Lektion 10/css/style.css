@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Fuggles";
+    src: local("Fuggles"), url('../Fuggles/Fuggles-Regular.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+.mysteryColor1 {
+    background-color: rgb(144, 238, 144);
+}
+
+.mysteryColor2 {
+    background-color: #ffa07a;
+}
+
+.mysteryColor3 {
+    background-color: hsl(234, 56%, 78%);
+}
+
+#childBox1, #childBox2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+#childBox1 {
+    background-color: #0000ff;
+    opacity: 0.5;
+}
+
+#childBox2 {
+    background-color: yellow;
+    top: -25px;
+    left: 25px;
+    opacity: 0.5;
+}
+
+body {
+    background-color: lightblue;
+}
+
+#backgroundDiv {
+    width: 700px;
+    height: 500px;
+    background-image: url('../img/jeep.jpeg');
+    background-repeat: no-repeat;
+
+    /* cover, contain, auto */
+    background-size: contain;
+    background-position: center;
+
+    /* scroll, fixed, local */
+    background-attachment: scroll;
+}
+
+.fgl {
+    font-family: "Fuggles", sans-serif;
+}
+
+.ubt {
+    font-family: "Ubuntu";
+}
+
+
+ul {
+    /* list-style-image: url('../img/icon.jpg');
+     */
+}
+
+li {
+    list-style-type: none;
+    background-image: url('../img/icon.jpg');
+    background-repeat: no-repeat;
+    padding: 3px 0px 3px 35px;
+    margin: 5px 0 5px 0;
+}
