@@ -1,0 +1,52 @@
+/*
+ Variabler
+*/
+$fonts: Verdana, Geneva, Tahoma, sans-serif;
+$quoteColor: lightseagreen;
+$hoverColor: white;
+
+
+/*
+ Stilar
+*/
+p {
+    font-size: 14px;
+    font-family: $fonts;
+}
+
+#quote {
+    background-color: $quoteColor;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+
+    p {
+        width: 100%;
+        font-weight: bold;
+        @extend %myFontStyle;
+
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+
+    img {
+        width: 25%;
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+%myFontStyle {
+    font-weight: bold;
+    font-style: italic;
+}
+
+h1 {
+    @extend %myFontStyle;
+}
+
+h2 {
+    @extend %myFontStyle;
+}
+
